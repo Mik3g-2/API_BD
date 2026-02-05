@@ -40,3 +40,46 @@ C:\Users\joset\OneDrive\Escritorio\5to Cuatrimestre\AWOS\ApiBase_Datos\obj\Debug
 C:\Users\joset\OneDrive\Escritorio\5to Cuatrimestre\AWOS\ApiBase_Datos\obj\Debug\net8.0\ApiBase_Datos.pdb
 C:\Users\joset\OneDrive\Escritorio\5to Cuatrimestre\AWOS\ApiBase_Datos\obj\Debug\net8.0\ApiBase_Datos.genruntimeconfig.cache
 C:\Users\joset\OneDrive\Escritorio\5to Cuatrimestre\AWOS\ApiBase_Datos\obj\Debug\net8.0\ref\ApiBase_Datos.dll
+C:\Users\Javi\Desktop\API\API_BD\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\Javi\Desktop\API\API_BD\bin\Debug\net8.0\appsettings.json
+C:\Users\Javi\Desktop\API\API_BD\bin\Debug\net8.0\ApiBase_Datos.staticwebassets.runtime.json
+C:\Users\Javi\Desktop\API\API_BD\bin\Debug\net8.0\ApiBase_Datos.staticwebassets.endpoints.json
+C:\Users\Javi\Desktop\API\API_BD\bin\Debug\net8.0\ApiBase_Datos.exe
+C:\Users\Javi\Desktop\API\API_BD\bin\Debug\net8.0\ApiBase_Datos.deps.json
+C:\Users\Javi\Desktop\API\API_BD\bin\Debug\net8.0\ApiBase_Datos.runtimeconfig.json
+C:\Users\Javi\Desktop\API\API_BD\bin\Debug\net8.0\ApiBase_Datos.dll
+C:\Users\Javi\Desktop\API\API_BD\bin\Debug\net8.0\ApiBase_Datos.pdb
+C:\Users\Javi\Desktop\API\API_BD\bin\Debug\net8.0\DnsClient.dll
+C:\Users\Javi\Desktop\API\API_BD\bin\Debug\net8.0\MongoDB.Bson.dll
+C:\Users\Javi\Desktop\API\API_BD\bin\Debug\net8.0\MongoDB.Driver.dll
+C:\Users\Javi\Desktop\API\API_BD\bin\Debug\net8.0\SharpCompress.dll
+C:\Users\Javi\Desktop\API\API_BD\bin\Debug\net8.0\Snappier.dll
+C:\Users\Javi\Desktop\API\API_BD\bin\Debug\net8.0\ZstdSharp.dll
+C:\Users\Javi\Desktop\API\API_BD\obj\Debug\net8.0\ApiBase_Datos.csproj.AssemblyReference.cache
+C:\Users\Javi\Desktop\API\API_BD\obj\Debug\net8.0\ApiBase_Datos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Javi\Desktop\API\API_BD\obj\Debug\net8.0\ApiBase_Datos.AssemblyInfoInputs.cache
+C:\Users\Javi\Desktop\API\API_BD\obj\Debug\net8.0\ApiBase_Datos.AssemblyInfo.cs
+C:\Users\Javi\Desktop\API\API_BD\obj\Debug\net8.0\ApiBase_Datos.csproj.CoreCompileInputs.cache
+C:\Users\Javi\Desktop\API\API_BD\obj\Debug\net8.0\ApiBase_Datos.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Javi\Desktop\API\API_BD\obj\Debug\net8.0\ApiBase_Datos.RazorAssemblyInfo.cache
+C:\Users\Javi\Desktop\API\API_BD\obj\Debug\net8.0\ApiBase_Datos.RazorAssemblyInfo.cs
+C:\Users\Javi\Desktop\API\API_BD\obj\Debug\net8.0\ApiBase_Datos.sourcelink.json
+C:\Users\Javi\Desktop\API\API_BD\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\Javi\Desktop\API\API_BD\obj\Debug\net8.0\scopedcss\bundle\ApiBase_Datos.styles.css
+C:\Users\Javi\Desktop\API\API_BD\obj\Debug\net8.0\scopedcss\projectbundle\ApiBase_Datos.bundle.scp.css
+C:\Users\Javi\Desktop\API\API_BD\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\Javi\Desktop\API\API_BD\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\Javi\Desktop\API\API_BD\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\Javi\Desktop\API\API_BD\obj\Debug\net8.0\staticwebassets\msbuild.ApiBase_Datos.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Javi\Desktop\API\API_BD\obj\Debug\net8.0\staticwebassets\msbuild.ApiBase_Datos.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\Javi\Desktop\API\API_BD\obj\Debug\net8.0\staticwebassets\msbuild.build.ApiBase_Datos.props
+C:\Users\Javi\Desktop\API\API_BD\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.ApiBase_Datos.props
+C:\Users\Javi\Desktop\API\API_BD\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.ApiBase_Datos.props
+C:\Users\Javi\Desktop\API\API_BD\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\Javi\Desktop\API\API_BD\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\Javi\Desktop\API\API_BD\obj\Debug\net8.0\ApiBase_.95A406EE.Up2Date
+C:\Users\Javi\Desktop\API\API_BD\obj\Debug\net8.0\ApiBase_Datos.dll
+C:\Users\Javi\Desktop\API\API_BD\obj\Debug\net8.0\refint\ApiBase_Datos.dll
+C:\Users\Javi\Desktop\API\API_BD\obj\Debug\net8.0\ApiBase_Datos.pdb
+C:\Users\Javi\Desktop\API\API_BD\obj\Debug\net8.0\ApiBase_Datos.genruntimeconfig.cache
+C:\Users\Javi\Desktop\API\API_BD\obj\Debug\net8.0\ref\ApiBase_Datos.dll
