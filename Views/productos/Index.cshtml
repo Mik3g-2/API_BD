@@ -5,12 +5,13 @@
 <a asp-action="Crear">Nuevo producto</a>
 
 
-<table border="1">
+<table class="table table-hover">
+
     <tr>
-        <th>ID</th>
+        <th>ID  </th>
         <th>Nombre</th>
-        <th>Stock</th>
-        <th>Precio</th>
+        <th>Stock </th>
+        <th>Precio </th>
         <th>Tipo</th>
         <th></th>
     </tr>
@@ -21,7 +22,7 @@
             <td>@p.Pro_Id</td>
             <td>@p.Pro_Nombre</td>
             <td>@p.Pro_Stock</td>
-            <td>@p.Pro_Precio</td>
+            <td>@p.Pro_Precio.ToString("C")</td>
             <td>@p.Pro_Tipo</td>
             <td>
                 <a asp-action="Eliminar"
@@ -33,5 +34,5 @@
             </td>
         </tr>
     }
-}
+
 </table>

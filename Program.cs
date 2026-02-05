@@ -15,8 +15,7 @@ await supabase.InitializeAsync();
 
 
 builder.Services.AddSingleton(supabase);
-builder.Services.AddScoped<ProductosService>();
-
+builder.Services.AddHttpClient<ProductosService>();
 
 var app = builder.Build();
 

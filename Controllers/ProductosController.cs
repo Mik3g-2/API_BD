@@ -40,10 +40,10 @@ namespace ApiBase_Datos.Controllers
             await _service.Eliminar(id);
             return RedirectToAction(nameof(Index));
         }
+        [HttpGet]
         public async Task<IActionResult> Editar(long id)
         {
-            var producto = (await _service.ObtenerTodos())
-                           .FirstOrDefault(p => p.Pro_Id == id);
+            var producto = await _service.ObtenerPorId(id);
 
             if (producto == null)
                 return NotFound();
@@ -52,13 +52,21 @@ namespace ApiBase_Datos.Controllers
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Editar(Productos p)
+        public async Task<IActionResult> Editar(long id,Productos p)
         {
+            if (id != p.Pro_Id)
+                return BadRequest();
+
             if (!ModelState.IsValid)
                 return View(p);
 
-            await _service.Actualizar(p);
-            return RedirectToAction(nameof(Index));
+            var resultado = await _service.Actualizar(p);
+
+            if(resultado)
+            {
+                return RedirectToAction(nameof(Index));
+            }
+            return View(p);
         }
     }
 }
