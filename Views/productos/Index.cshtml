@@ -1,0 +1,37 @@
+﻿@model List<ApiBase_Datos.Models.Productos>
+
+<h2>Productos</h2>
+
+<a asp-action="Crear">Nuevo producto</a>
+
+
+<table border="1">
+    <tr>
+        <th>ID</th>
+        <th>Nombre</th>
+        <th>Stock</th>
+        <th>Precio</th>
+        <th>Tipo</th>
+        <th></th>
+    </tr>
+
+    @foreach (var p in Model)
+    {
+        <tr>
+            <td>@p.Pro_Id</td>
+            <td>@p.Pro_Nombre</td>
+            <td>@p.Pro_Stock</td>
+            <td>@p.Pro_Precio</td>
+            <td>@p.Pro_Tipo</td>
+            <td>
+                <a asp-action="Eliminar"
+                   asp-route-id="@p.Pro_Id"
+                   onclick="return confirm('¿Seguro que deseas eliminar?')">
+                     Eliminar
+                </a>
+                <a asp-action="Editar" asp-route-id="@p.Pro_Id"> Editar</a>
+            </td>
+        </tr>
+    }
+}
+</table>

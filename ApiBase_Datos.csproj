@@ -8,6 +8,8 @@
 
   <ItemGroup>
     <PackageReference Include="MongoDB.Driver" Version="3.6.0" />
+    <PackageReference Include="Npgsql" Version="10.0.1" />
+    <PackageReference Include="Supabase" Version="1.1.1" />
   </ItemGroup>
 
 </Project>
