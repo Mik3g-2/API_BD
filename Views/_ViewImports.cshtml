@@ -1,3 +1,22 @@
 ﻿@using ApiBase_Datos
 @using ApiBase_Datos.Models
 @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@model List<ApiBase_Datos.Models.Productos>
+
+<h2>Productos</h2>
+
+<a asp-action="Crear">Nuevo</a>
+
+<table border="1">
+	<tr>
+		<th>ID</th>
+		<th>Nombre</th>
+		<th>Stock</th>
+		<th>Precio</th>
+		<th>Tipo</th>
+		<th></th>
+	</tr>
+@using ApiBase_Datos
+@using ApiBase_Datos.Models
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers

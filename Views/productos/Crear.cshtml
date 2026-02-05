@@ -1,0 +1,21 @@
+﻿@model ApiBase_Datos.Models.Productos
+
+<h2>Crear Producto</h2>
+
+<form asp-action="Crear" method="post">
+    @Html.AntiForgeryToken()
+
+    Nombre:
+    <input asp-for="Pro_Nombre" /><br />
+
+    Precio:
+    <input asp-for="Pro_Precio" type="number" step="0.01" /><br />
+
+    Tipo:
+    <input asp-for="Pro_Tipo" /><br />
+
+    Stock:
+    <input asp-for="Pro_Stock" type="number" /><br />
+
+    <button type="submit">Guardar</button>
+</form>
