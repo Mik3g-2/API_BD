@@ -1,16 +1,27 @@
-﻿using Supabase;
-using ApiBase_Datos.Models;
+﻿using ApiBase_Datos.Models;
 using ApiBase_Datos.Models.Db;
+using Microsoft.AspNetCore.Razor.Hosting;
+using MongoDB.Bson.IO;
+using Supabase;
+using System.Net.Http;
+using Newtonsoft.Json;
 
 namespace ApiBase_Datos.Services
 {
     public class ProductosService
     {
         private readonly Client _supabase;
+        private readonly HttpClient _httpClient;
+        private readonly string _url;
+        private readonly string _apikey;
 
-        public ProductosService(Client supabase)
+
+        public ProductosService(Client supabase,HttpClient httpClient, IConfiguration configuration)
         {
             _supabase = supabase;
+            _httpClient = httpClient;
+            _url = configuration["SB:ApiURL"];
+            _apikey = configuration["SB:ApiKey"];
         }
 
         public async Task<List<Productos>> ObtenerTodos()
@@ -56,7 +67,7 @@ namespace ApiBase_Datos.Services
                 .Delete();
 
         }
-        public async Task Actualizar(Productos p)
+        public async Task<bool> Actualizar(Productos p)
         {
             var db = new ProductoDb
             {
@@ -70,6 +81,25 @@ namespace ApiBase_Datos.Services
                 .From<ProductoDb>()
                 .Where(x => x.Pro_Id == p.Pro_Id)
                 .Update(db);
+
+            return true;
+        }
+        public async Task<Productos> ObtenerPorId(long id)
+        {
+            _httpClient.DefaultRequestHeaders.Clear();
+            _httpClient.DefaultRequestHeaders.Add("apikey", _apikey);
+            _httpClient.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", _apikey);
+
+            var response = await _httpClient.GetAsync($"{_url}/rest/v1/Productos?Pro_Id=eq.{id}");
+
+            if (response.IsSuccessStatusCode)
+            {
+                var json = await response.Content.ReadAsStringAsync();
+
+                var lista = Newtonsoft.Json.JsonConvert.DeserializeObject<List<Productos>>(json);
+                return lista.FirstOrDefault();
+            }
+            return null;
         }
     }
 }

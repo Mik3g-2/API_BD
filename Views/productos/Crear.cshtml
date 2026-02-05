@@ -5,17 +5,30 @@
 <form asp-action="Crear" method="post">
     @Html.AntiForgeryToken()
 
-    Nombre:
-    <input asp-for="Pro_Nombre" /><br />
-
-    Precio:
-    <input asp-for="Pro_Precio" type="number" step="0.01" /><br />
-
-    Tipo:
-    <input asp-for="Pro_Tipo" /><br />
-
-    Stock:
-    <input asp-for="Pro_Stock" type="number" /><br />
-
+    <div class="from-group">
+        <label asp-for="Pro_Nombre"> Nombre del producto: </label>
+        <input asp-for="Pro_Nombre" class="from-control"/>
+        <span asp-validation-for="Pro_Nombre" class="text-danger"></span>
+    </div>
+   <br />
+    <div class="from-group">
+        <label asp-for="Pro_Precio"> Precio del Producto: </label>
+        <input asp-for="Pro_Precio" class="from-group" type="number" step="0.01" />
+        <span asp-validation-for="Pro_Precio" class=" text-danger"></span>
+    </div>
+    <br />
+    <div class=" from-group">
+        <label asp-for="Pro_Tipo"> Tipo de producto: </label>
+        <input asp-for="Pro_Tipo" class="from-group"/>
+        <span asp-validation-for="Pro_Tipo" class="text_danger"></span>
+    </div>
+    <br />
+    <div class=" from-group">
+        <label asp-for="Pro_Stock"> Stock de producto: </label>
+        <input asp-for="Pro_Stock" class="from-group" />
+        <span asp-validation-for="Pro_Stock" class="text-danger"></span>
+    </div> 
+    <br />
     <button type="submit">Guardar</button>
+    <button type="reset">Cancelar</button>
 </form>
