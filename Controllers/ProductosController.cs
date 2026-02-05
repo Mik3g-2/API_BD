@@ -41,7 +41,7 @@ namespace ApiBase_Datos.Controllers
             return RedirectToAction(nameof(Index));
         }
         [HttpGet]
-        public async Task<IActionResult> Editar(long id)
+        public async Task<IActionResult> GetById(long id)
         {
             var producto = await _service.ObtenerPorId(id);
 
@@ -50,6 +50,13 @@ namespace ApiBase_Datos.Controllers
 
             return View(producto);
         }
+
+        [HttpGet]
+        public IActionResult Editar()
+        {
+            return View();
+        }
+
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Editar(long id,Productos p)
